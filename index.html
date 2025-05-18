@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alarme Multiple</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1><img src="img/clock.png" > Alarmes</h1>
+    <div class="clock" id="clock">--:--:--</div>
+
+    <div class="alarm-form">
+      <input type="time" id="alarmInput" />
+      <button onclick="addAlarm()">Ajouter une alarme</button>
+    </div>
+
+    <h2>Liste des alarmes</h2>
+    <ul id="alarmList"></ul>
+    <audio id="alarmSound" src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3" preload="auto"></audio>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
